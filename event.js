@@ -1,5 +1,3 @@
-
-
 function clearIt() {
 	var elements = ['rightCol', 'groupsNav', 'appsNav', 'interestsNav', 'pagesNav'];
 
@@ -8,4 +6,5 @@ function clearIt() {
 	}
 }
 
-clearIt();
+window.onload = clearIt();
+
