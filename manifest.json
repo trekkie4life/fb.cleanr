@@ -6,22 +6,11 @@
   "description": "remove the ad-sidebar from fb",
   "author": "Armando Reed",
 
-  "browser_action": {
-    "default_icon": "icon19.png",
-    "default_title": "fb cleanr"
-  },
-
   "background": {
     "scripts": ["background.js"]
   },
 
   "offline_enabled": true,
-  "permissions": ["tabs", "https://www.facebook.com/*", "http://www.facebook.com/*"],
 
-  "content_scripts": [
-      {
-          "matches": ["http://www.facebook.com/*", "https://www.facebook.com/*"],
-          "js": ["event.js"]
-      }
-  ]
+  "permissions": [ "tabs", "https://www.facebook.com/*", "http://www.facebook.com/*"]
 }
