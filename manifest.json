@@ -4,7 +4,7 @@
   "name": "fb cleanr",
   "version": "1.0",
   "description": "remove the ad-sidebar from fb",
-  "author": "A.Reed",
+  "author": "Armando Reed",
 
   "browser_action": {
     "default_icon": "icon19.png",
@@ -12,12 +12,11 @@
   },
 
   "background": {
-    "scripts": ["event.js"],
-    "persistent": false
+    "scripts": ["background.js"]
   },
 
   "offline_enabled": true,
-  "permissions": ["https://www.facebook.com/*"],
+  "permissions": ["tabs", "https://www.facebook.com/*", "http://www.facebook.com/*"],
 
   "content_scripts": [
       {
