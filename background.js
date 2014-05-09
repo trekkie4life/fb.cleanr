@@ -26,7 +26,7 @@ chrome.tabs.onActivated.addListener(function(activeInfo) {
 
 chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
   if (fbMain(tab.url)) {
-    chrome.tabs.executeScript(tabId, {file: "event.js"}, function(result) {});
+    chrome.tabs.executeScript(tabId, {file: "event.js"});
   }
 });
 
