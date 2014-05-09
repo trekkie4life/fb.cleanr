@@ -1,7 +1,7 @@
-function fbMain(tab_url) {
+function fbMain(tabUrl) {
 	var notice = false;
 
-	if ((tab_url.match("https://www.facebook.com/")) || (tab_url.match("http://www.facebook.com/"))) {
+	if ((tabUrl.match("https://www.facebook.com/")) || (tabUrl.match("http://www.facebook.com/"))) {
 		notice = true;
 	}
 
@@ -11,7 +11,7 @@ function fbMain(tab_url) {
 
 function loadEvent(tab) {
 	if (fbMain(tab.url)) {
-		chrome.tabs.executeScript(tab.tabID, {file: "event.js"}, function(result){});
+		chrome.tabs.executeScript(tab.tabID, {file: "event.js"});
 	}
 }
 
